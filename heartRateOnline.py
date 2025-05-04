@@ -7,7 +7,7 @@ from cvzone.PlotModule import LivePlot
 import cvzone
 
 class HeartRateMonitor:
-    def __init__(self, camera_index=0, run_duration=60, save_bpm=True, show_plot=True, , color=(255, 0, 255)):
+    def __init__(self, camera_index=0, run_duration=60, save_bpm=True, show_plot=True, color=(255, 0, 255)):
 
         self.color = color
 

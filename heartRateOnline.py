@@ -34,7 +34,7 @@ class HeartRateMonitor:
         self.detector = FaceDetector()
 
         # Visualization
-        self.plot_y = LivePlot(320, 240, [60, 120], invert=True, color=(0, 0, 255)) if self.SHOW_PLOT else None
+        self.plot_y = LivePlot(320, 240, [60, 120], invert=True) if self.SHOW_PLOT else None
 #        self.plot_y = LivePlot(320, 240, [60, 120], invert=True) if self.SHOW_PLOT else None
 
 
@@ -181,5 +181,5 @@ class HeartRateMonitor:
             print("BPM log saved to bpm_log.csv")
 
 if __name__ == "__main__":
-    monitor = HeartRateMonitor(camera_index=1, run_duration=120, save_bpm=True, show_plot=True)
+    monitor = HeartRateMonitor(camera_index=1, run_duration=400, save_bpm=True, show_plot=True)
     monitor.run()
